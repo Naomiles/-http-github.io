@@ -18,4 +18,4 @@ links:
 
 ## Learning notes
 
-I keep my Python notes in blog posts - check the [Blog]({{ '/posts/' | relative_url }}) section for details.
+I keep my Python notes in blog posts - check the [Blog]({{ '/archives/' | relative_url }}) section for details.
