@@ -67,7 +67,7 @@ select.addEventListener("click", function () { elementToggleFunc(this); });
 for (let i = 0; i < selectItems.length; i++) {
   selectItems[i].addEventListener("click", function () {
 
-    let selectedValue = this.innerText.toLowerCase();
+    let selectedValue = this.dataset.filterKey;
     selectValue.innerText = this.innerText;
     elementToggleFunc(select);
     filterFunc(selectedValue);
@@ -101,7 +101,7 @@ for (let i = 0; i < filterBtn.length; i++) {
 
   filterBtn[i].addEventListener("click", function () {
 
-    let selectedValue = this.innerText.toLowerCase();
+    let selectedValue = this.dataset.filterKey;
     selectValue.innerText = this.innerText;
     filterFunc(selectedValue);
 
@@ -144,16 +144,63 @@ const pages = document.querySelectorAll("[data-page]");
 for (let i = 0; i < navigationLinks.length; i++) {
   navigationLinks[i].addEventListener("click", function () {
 
-    for (let i = 0; i < pages.length; i++) {
-      if (this.innerHTML.toLowerCase() === pages[i].dataset.page) {
-        pages[i].classList.add("active");
+    const pageKey = this.dataset.pageKey;
+    for (let j = 0; j < pages.length; j++) {
+      if (pageKey === pages[j].dataset.page) {
+        pages[j].classList.add("active");
         navigationLinks[i].classList.add("active");
         window.scrollTo(0, 0);
       } else {
-        pages[i].classList.remove("active");
+        pages[j].classList.remove("active");
         navigationLinks[i].classList.remove("active");
       }
     }
 
   });
+}
+
+
+
+// i18n language switch
+const langBtns = document.querySelectorAll("[data-lang]");
+
+function switchLang(lang) {
+  const dict = TRANSLATIONS[lang];
+  if (!dict) return;
+
+  // update text content
+  document.querySelectorAll("[data-i18n]").forEach(function (el) {
+    const key = el.getAttribute("data-i18n");
+    if (dict[key] !== undefined) {
+      el.innerHTML = dict[key];
+    }
+  });
+
+  // update placeholders
+  document.querySelectorAll("[data-i18n-placeholder]").forEach(function (el) {
+    const key = el.getAttribute("data-i18n-placeholder");
+    if (dict[key] !== undefined) {
+      el.placeholder = dict[key];
+    }
+  });
+
+  // update active button
+  langBtns.forEach(function (btn) {
+    btn.classList.toggle("active", btn.dataset.lang === lang);
+  });
+
+  // remember preference
+  localStorage.setItem("lang", lang);
+}
+
+langBtns.forEach(function (btn) {
+  btn.addEventListener("click", function () {
+    switchLang(this.dataset.lang);
+  });
+});
+
+// restore saved language
+var savedLang = localStorage.getItem("lang");
+if (savedLang && TRANSLATIONS[savedLang]) {
+  switchLang(savedLang);
 }
