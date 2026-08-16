@@ -9,6 +9,7 @@ const TRANSLATIONS = {
     "nav.resume": "Resume",
     "nav.portfolio": "Portfolio",
     "nav.blog": "Blog",
+    "nav.skills": "Skills",
     "nav.contact": "Contact",
 
     // Sidebar
@@ -18,7 +19,7 @@ const TRANSLATIONS = {
     "sidebar.phone": "Phone",
     "sidebar.github": "GitHub",
     "sidebar.location": "Location",
-    "sidebar.locationValue": "Tongling, Anhui, China",
+    "sidebar.locationValue": "Wuhu, Anhui, China",
     "sidebar.birthday": "Birthday",
     "sidebar.birthdayValue": "September, 1996",
 
@@ -84,12 +85,24 @@ const TRANSLATIONS = {
     // Contact
     "contact.title": "Contact",
     "contact.mapLine1": "Naomile \u00b7 Automotive Embedded Software Engineer",
-    "contact.mapLine2": "Tongling, Anhui, China \u00b7 <a href=\"mailto:Naomiles@outlook.com\" style=\"color:#72b4f5;\">Naomiles@outlook.com</a>",
+    "contact.mapLine2": "Wuhu, Anhui, China \u00b7 <a href=\"mailto:Naomiles@outlook.com\" style=\"color:#72b4f5;\">Naomiles@outlook.com</a>",
     "contact.formTitle": "Contact Form",
     "contact.name": "Full name",
     "contact.email": "Email address",
     "contact.message": "Your Message",
-    "contact.send": "Send Message"
+    "contact.send": "Send Message",
+
+    // Skills
+    "skills.title": "Skills",
+    "skills.subtitle": "Downloadable Resources",
+    "skills.intro": "Free resources and tools I've built for automotive engineers. Click to download.",
+    "skills.s1title": "AUTOSAR BSW Integration Guide",
+    "skills.s1desc": "A comprehensive checklist and step-by-step guide for integrating AUTOSAR Basic Software modules including WDGM, NvM, Fee, CSM and FuSa stacks. Covers configuration, dependency management and common pitfalls.",
+    "skills.s1format": "Markdown \u00b7 15 KB",
+    "skills.s2title": "ISO 21434 Cybersecurity Checklist",
+    "skills.s2desc": "Complete TARA template, threat modeling worksheet and process checklist aligned with ISO 21434. Includes secure boot verification steps, risk assessment matrices and mitigation strategy templates.",
+    "skills.s2format": "Markdown \u00b7 20 KB",
+    "skills.download": "Download"
   },
 
   zh: {
@@ -97,6 +110,7 @@ const TRANSLATIONS = {
     "nav.resume": "\u7b80\u5386",
     "nav.portfolio": "\u9879\u76ee",
     "nav.blog": "\u535a\u5ba2",
+    "nav.skills": "\u6280\u80fd\u8d44\u6e90",
     "nav.contact": "\u8054\u7cfb",
 
     "sidebar.title": "\u6c7d\u8f66\u5d4c\u5165\u5f0f\u8f6f\u4ef6\u5de5\u7a0b\u5e08",
@@ -105,7 +119,7 @@ const TRANSLATIONS = {
     "sidebar.phone": "\u7535\u8bdd",
     "sidebar.github": "GitHub",
     "sidebar.location": "\u6240\u5728\u5730",
-    "sidebar.locationValue": "\u5b89\u5fbd\u94dc\u9675",
+    "sidebar.locationValue": "\u5b89\u5fbd\u829c\u6e56",
     "sidebar.birthday": "\u751f\u65e5",
     "sidebar.birthdayValue": "1996\u5e749\u6708",
 
@@ -166,12 +180,23 @@ const TRANSLATIONS = {
 
     "contact.title": "\u8054\u7cfb\u6211",
     "contact.mapLine1": "Naomile \u00b7 \u6c7d\u8f66\u5d4c\u5165\u5f0f\u8f6f\u4ef6\u5de5\u7a0b\u5e08",
-    "contact.mapLine2": "\u5b89\u5fbd\u94dc\u9675 \u00b7 <a href=\"mailto:Naomiles@outlook.com\" style=\"color:#72b4f5;\">Naomiles@outlook.com</a>",
+    "contact.mapLine2": "\u5b89\u5fbd\u829c\u6e56 \u00b7 <a href=\"mailto:Naomiles@outlook.com\" style=\"color:#72b4f5;\">Naomiles@outlook.com</a>",
     "contact.formTitle": "\u8054\u7cfb\u8868\u5355",
     "contact.name": "\u59d3\u540d",
     "contact.email": "\u90ae\u7bb1\u5730\u5740",
     "contact.message": "\u60a8\u7684\u7559\u8a00",
-    "contact.send": "\u53d1\u9001\u6d88\u606f"
+    "contact.send": "\u53d1\u9001\u6d88\u606f",
+    
+    "skills.title": "\u6280\u80fd\u8d44\u6e90",
+    "skills.subtitle": "\u53ef\u4e0b\u8f7d\u8d44\u6e90",
+    "skills.intro": "\u6211\u4e3a\u6c7d\u8f66\u5d4c\u5165\u5f0f\u5de5\u7a0b\u5e08\u5f00\u53d1\u7684\u514d\u8d39\u5de5\u5177\u548c\u8d44\u6e90\uff0c\u70b9\u51fb\u5373\u53ef\u4e0b\u8f7d\u3002",
+    "skills.s1title": "AUTOSAR BSW \u96c6\u6210\u6307\u5357",
+    "skills.s1desc": "\u5168\u9762\u7684AUTOSAR\u57fa\u7840\u8f6f\u4ef6\u96c6\u6210\u68c0\u67e5\u6e05\u5355\u548c\u5206\u6b65\u6307\u5357\uff0c\u8986\u76d6WDGM\u3001NvM\u3001Fee\u3001CSM\u548cFuSa\u534f\u8bae\u6808\u7684\u914d\u7f6e\u3001\u4f9d\u8d56\u7ba1\u7406\u548c\u5e38\u89c1\u95ee\u9898\u3002",
+    "skills.s1format": "Markdown \u00b7 15 KB",
+    "skills.s2title": "ISO 21434 \u7f51\u7edc\u5b89\u5168\u68c0\u67e5\u6e05\u5355",
+    "skills.s2desc": "\u5b8c\u6574\u7684TARA\u6a21\u677f\u3001\u5a01\u80c1\u5efa\u6a21\u5de5\u4f5c\u8868\u548c\u6d41\u7a0b\u68c0\u67e5\u6e05\u5355\uff0c\u7b26\u5408ISO 21434\u6807\u51c6\u3002\u5305\u542b\u5b89\u5168\u542f\u52a8\u9a8c\u8bc1\u3001\u98ce\u9669\u8bc4\u4f30\u77e9\u9635\u548c\u7f13\u89e3\u7b56\u7565\u6a21\u677f\u3002",
+    "skills.s2format": "Markdown \u00b7 20 KB",
+    "skills.download": "\u4e0b\u8f7d",
   },
 
   ja: {
@@ -179,6 +204,7 @@ const TRANSLATIONS = {
     "nav.resume": "\u5c65\u6b74\u66f8",
     "nav.portfolio": "\u30dd\u30fc\u30c8\u30d5\u30a9\u30ea\u30aa",
     "nav.blog": "\u30d6\u30ed\u30b0",
+    "nav.skills": "\u30b9\u30ad\u30eb\u30ea\u30bd\u30fc\u30b9",
     "nav.contact": "\u9023\u7d61\u5148",
 
     "sidebar.title": "\u8eca\u4e21\u7d44\u307f\u8fbc\u307f\u30bd\u30d5\u30c8\u30a6\u30a7\u30a2\u30a8\u30f3\u30b8\u30cb\u30a2",
@@ -187,7 +213,7 @@ const TRANSLATIONS = {
     "sidebar.phone": "\u96fb\u8a71",
     "sidebar.github": "GitHub",
     "sidebar.location": "\u6240\u5728\u5730",
-    "sidebar.locationValue": "\u4e2d\u56fd\u30fb\u5b89\u5fbd\u7701\u9285\u9675\u5e02",
+    "sidebar.locationValue": "\u4e2d\u56fd\u30fb\u5b89\u5fbd\u7701\u829c\u6e56\u5e02",
     "sidebar.birthday": "\u751f\u5e74\u6708\u65e5",
     "sidebar.birthdayValue": "1996\u5e749\u6708",
 
@@ -248,11 +274,22 @@ const TRANSLATIONS = {
 
     "contact.title": "\u9023\u7d61\u5148",
     "contact.mapLine1": "Naomile \u00b7 \u8eca\u4e21\u7d44\u307f\u8fbc\u307f\u30bd\u30d5\u30c8\u30a6\u30a7\u30a2\u30a8\u30f3\u30b8\u30cb\u30a2",
-    "contact.mapLine2": "\u4e2d\u56fd\u30fb\u5b89\u5fbd\u7701\u9285\u9675\u5e02 \u00b7 <a href=\"mailto:Naomiles@outlook.com\" style=\"color:#72b4f5;\">Naomiles@outlook.com</a>",
+    "contact.mapLine2": "\u4e2d\u56fd\u30fb\u5b89\u5fbd\u7701\u829c\u6e56\u5e02 \u00b7 <a href=\"mailto:Naomiles@outlook.com\" style=\"color:#72b4f5;\">Naomiles@outlook.com</a>",
     "contact.formTitle": "\u304a\u554f\u3044\u5408\u308f\u305b\u30d5\u30a9\u30fc\u30e0",
     "contact.name": "\u6c0f\u540d",
     "contact.email": "\u30e1\u30fc\u30eb\u30a2\u30c9\u30ec\u30b9",
     "contact.message": "\u30e1\u30c3\u30bb\u30fc\u30b8",
-    "contact.send": "\u9001\u4fe1"
+    "contact.send": "\u9001\u4fe1",
+    
+    "skills.title": "\u30b9\u30ad\u30eb\u30ea\u30bd\u30fc\u30b9",
+    "skills.subtitle": "\u30c0\u30a6\u30f3\u30ed\u30fc\u30c9\u53ef\u80fd\u30ea\u30bd\u30fc\u30b9",
+    "skills.intro": "\u8eca\u4e21\u7d44\u307f\u8fbc\u307f\u30a8\u30f3\u30b8\u30cb\u30a2\u5411\u3051\u306b\u958b\u767a\u3057\u305f\u7121\u6599\u30c4\u30fc\u30eb\u3068\u30ea\u30bd\u30fc\u30b9\u3067\u3059\u3002\u30af\u30ea\u30c3\u30af\u3067\u30c0\u30a6\u30f3\u30ed\u30fc\u30c9\u3067\u304d\u307e\u3059\u3002",
+    "skills.s1title": "AUTOSAR BSW\u7d71\u5408\u30ac\u30a4\u30c9",
+    "skills.s1desc": "AUTOSAR\u30d9\u30fc\u30b7\u30c3\u30af\u30bd\u30d5\u30c8\u30a6\u30a7\u30a2\u30e2\u30b8\u30e5\u30fc\u30eb\u306e\u7d71\u5408\u30c1\u30a7\u30c3\u30af\u30ea\u30b9\u30c8\u3068\u624b\u9806\u30ac\u30a4\u30c9\u3002WDGM\u3001NvM\u3001Fee\u3001CSM\u3001FuSa\u30b9\u30bf\u30c3\u30af\u306e\u8a2d\u5b9a\u3001\u4f9d\u5b58\u95a2\u4fc2\u7ba1\u7406\u3001\u3088\u304f\u3042\u308b\u554f\u984c\u3092\u7db2\u7f85\u3002",
+    "skills.s1format": "Markdown \u00b7 15 KB",
+    "skills.s2title": "ISO 21434 \u30b5\u30a4\u30d0\u30fc\u30bb\u30ad\u30e5\u30ea\u30c6\u30a3\u30c1\u30a7\u30c3\u30af\u30ea\u30b9\u30c8",
+    "skills.s2desc": "ISO 21434\u306b\u6e96\u62e0\u3057\u305fTARA\u30c6\u30f3\u30d7\u30ec\u30fc\u30c8\u3001\u5a01\u8105\u30e2\u30c7\u30ea\u30f3\u30b0\u30ef\u30fc\u30af\u30b7\u30fc\u30c8\u3001\u30d7\u30ed\u30bb\u30b9\u30c1\u30a7\u30c3\u30af\u30ea\u30b9\u30c8\u3002\u30bb\u30ad\u30e5\u30a2\u30d6\u30fc\u30c8\u691c\u8a3c\u3001\u30ea\u30b9\u30af\u8a55\u4fa1\u30de\u30c8\u30ea\u30c3\u30af\u30b9\u3001\u7de9\u548c\u6226\u7565\u30c6\u30f3\u30d7\u30ec\u30fc\u30c8\u4ed8\u304d\u3002",
+    "skills.s2format": "Markdown \u00b7 20 KB",
+    "skills.download": "\u30c0\u30a6\u30f3\u30ed\u30fc\u30c9",
   }
 };
