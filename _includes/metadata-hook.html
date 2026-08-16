@@ -1,0 +1,52 @@
+<!-- Custom metadata: styles for the Skills and CV pages -->
+<style>
+  /* --- Skills --- */
+  .skill-card {
+    border: 1px solid var(--border-color);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  .skill-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.12) !important;
+  }
+  .skill-card-icon {
+    font-size: 1.75rem;
+    color: var(--link-color);
+  }
+  .skill-header-icon {
+    font-size: 2.5rem;
+    color: var(--link-color);
+  }
+  .skill-stars i {
+    color: #f7b731;
+    font-size: 0.85rem;
+  }
+
+  /* --- CV --- */
+  .cv-section-title {
+    border-left: 4px solid var(--link-color);
+    padding-left: 0.6rem;
+  }
+  .cv-timeline {
+    border-left: 2px solid var(--border-color);
+    margin-left: 0.5rem;
+    padding-left: 1.25rem;
+  }
+  .cv-item {
+    position: relative;
+    padding-bottom: 1.25rem;
+  }
+  .cv-item::before {
+    content: "";
+    position: absolute;
+    left: -1.62rem;
+    top: 0.45rem;
+    width: 0.65rem;
+    height: 0.65rem;
+    border-radius: 50%;
+    background: var(--link-color);
+  }
+  .cv-progress {
+    height: 0.5rem;
+  }
+</style>

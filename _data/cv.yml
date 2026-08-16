@@ -1,0 +1,53 @@
+# ============================================================
+# Curriculum Vitae data — edit this file to update your CV page
+# ============================================================
+
+profile:
+  name: "Naomiles"                    # TODO: change to your full name
+  title: "Software Developer"         # TODO: change to your job title
+  location: "Earth"                   # TODO: change to your city/country
+  email: ""                           # TODO: change to your email
+  website: ""                         # TODO: change to your website
+  github: "https://github.com/Naomiles"
+
+summary: >-
+  A software developer who enjoys building clean, maintainable and
+  user-friendly applications. Passionate about learning new technologies
+  and sharing knowledge through blog posts. This section is a placeholder —
+  replace it with a short paragraph about yourself.
+
+experience:
+  - role: "Software Developer"        # TODO: replace with your experience
+    company: "Your Company"
+    period: "2024 - Present"
+    points:
+      - Developed and maintained backend services used by thousands of users.
+      - Improved CI/CD pipelines, reducing release time by 50%.
+      - Mentored junior developers and led code review sessions.
+
+  - role: "Software Engineer Intern"
+    company: "Another Company"
+    period: "2023 - 2024"
+    points:
+      - Built internal tools that automated repetitive reporting tasks.
+      - Collaborated with cross-functional teams on feature delivery.
+
+education:
+  - degree: "B.S. in Computer Science" # TODO: replace with your education
+    school: "Your University"
+    period: "2019 - 2023"
+
+skills:
+  - name: "Python"
+    level: 4                          # 1-5
+  - name: "Web Development"
+    level: 4
+  - name: "Docker & Kubernetes"
+    level: 3
+  - name: "Data Science & ML"
+    level: 3
+
+projects:
+  - name: "My GitHub.io Site"         # TODO: replace with your projects
+    url: "https://github.com/Naomiles/-http-github.io"
+    description: "The personal website you are looking at — built with Jekyll and the Chirpy theme."

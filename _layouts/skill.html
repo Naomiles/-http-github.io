@@ -1,0 +1,40 @@
+---
+layout: page
+---
+
+<div class="skill-header d-flex align-items-center mb-3">
+  {% if page.icon %}
+    <i class="fa-fw {{ page.icon }} skill-header-icon me-3"></i>
+  {% endif %}
+  <div>
+    <h1 class="h3 mb-1">{{ page.title }}</h1>
+    <div class="skill-stars" aria-label="Proficiency {{ page.level | default: 0 }} of 5">
+      {% for i in (1..5) %}
+        <i class="fa-{% if i <= page.level %}solid{% else %}regular{% endif %} fa-star"></i>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% if page.tags %}
+  <div class="mb-3">
+    {% for tag in page.tags %}
+      <span class="badge rounded-pill text-bg-light border me-1">{{ tag }}</span>
+    {% endfor %}
+  </div>
+{% endif %}
+
+<hr class="mt-0">
+
+{{ content }}
+
+{% if page.links %}
+  <h2 class="h5 mt-4">Related Links</h2>
+  <ul>
+    {% for link in page.links %}
+      <li>
+        <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer">{{ link.label }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+{% endif %}

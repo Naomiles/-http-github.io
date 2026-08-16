@@ -1,0 +1,32 @@
+---
+layout: page
+---
+
+{{ content }}
+
+<div class="row g-3 mt-1">
+  {% for skill in site.skills %}
+    <div class="col-12 col-md-6 col-xl-4">
+      <a class="text-decoration-none" href="{{ skill.url | relative_url }}">
+        <div class="card skill-card h-100 shadow-sm">
+          <div class="card-body">
+            <div class="d-flex align-items-center mb-2">
+              {% if skill.icon %}
+                <i class="fa-fw {{ skill.icon }} skill-card-icon me-2"></i>
+              {% endif %}
+              <h3 class="h6 card-title mb-0">{{ skill.title }}</h3>
+            </div>
+            {% if skill.description %}
+              <p class="card-text small text-muted mb-2">{{ skill.description }}</p>
+            {% endif %}
+            <div class="skill-stars" aria-label="Proficiency {{ skill.level | default: 0 }} of 5">
+              {% for i in (1..5) %}
+                <i class="fa-{% if i <= skill.level %}solid{% else %}regular{% endif %} fa-star"></i>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+  {% endfor %}
+</div>
