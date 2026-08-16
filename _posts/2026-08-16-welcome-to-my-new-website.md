@@ -38,5 +38,5 @@ print(greet("you"))
 ## Stay tuned
 
 I will be posting tutorials and project notes here. If you want to keep up,
-subscribe via the [RSS feed](/feed.xml) or follow me on
+subscribe via the [RSS feed]({{ '/feed.xml' | relative_url }}) or follow me on
 [GitHub](https://github.com/Naomiles).
